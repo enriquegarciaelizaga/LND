@@ -1,0 +1,141 @@
+:root{
+    --blanco:#fff;
+    --oscuro:#212121;
+    --primario: #ffc107;
+    --secundario:#0097a7;
+    --gris:#757575;
+    --grisClaro:#DFE9F3;
+
+
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+body{
+    font-size: 16px;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+}
+.titulo{
+    text-align: center;
+    font-size: 2.8rem;
+
+}
+span {
+    color: var(--primario);
+    font-size: 3rem;
+
+}
+.nav-bg{
+    background-color: var(--secundario);
+    
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    
+}
+.Navegación-principal{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    text-align: center;
+    
+    
+
+}
+@media (min-width:768px){
+
+     .Navegación-principal{
+        flex-direction: row;
+    }
+}
+
+.Navegación-principal a{
+    font-weight: bold;
+    display: inline;
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+
+}
+.Navegación-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+    
+}
+
+
+.hero{
+    background-image: url(../img/FOndofreelancer.jpg);
+    background-repeat: no-repeat;
+    height: 450px;
+    background-size: cover;
+    
+}
+.contenido-hero {
+    text-align: center;
+    color: var(--blanco);
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.mis-servicios{
+    text-align: center;
+}
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    font-weight: bold;
+    border: none;
+    width: 90%;
+    margin: 3rem;
+}
+.boton:hover{
+    background-color: var(--primario);
+    cursor: pointer;
+}
+
+@media (min-width:768px){
+
+     .boton{
+        width:auto;
+    }
+}
+.sombra{
+    box-shadow: 0px 0px 21px -4px rgba(46,45,46,1);
+    background-color: var(--blanco);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+.servicio{
+    display: grid;   
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    
+
+}
+
